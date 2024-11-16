@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub,BsBarChartLine } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
@@ -13,16 +13,40 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
+       {/*  <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
+
+        </Button> */}
+
+        {props.GitHub && (
+          <Button variant="primary" href={props.ghLink} target="_blank">
+            <BsGithub /> GitHub
+          </Button>
+        )} 
+
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          {props.isBlog && (
+          <Button variant="primary"
+          href={props.demoLink}
+          target="_blank"> 
+            <CgWebsite /> Report
+          </Button>
+        )}
+           {props.Bi && (
+          <Button variant="primary" href={props.demoLink} target="_blank">
+            <BsBarChartLine /> Power bi
+          </Button>
+        )} 
+       
+
         {"\n"}
         {"\n"}
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
-        {!props.isBlog && props.demoLink && (
+      {/*   {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
@@ -32,7 +56,7 @@ function ProjectCards(props) {
             <CgWebsite /> &nbsp;
             {"Report"}
           </Button>
-        )}
+        )} */}
       </Card.Body>
     </Card>
   );

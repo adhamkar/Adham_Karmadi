@@ -12,7 +12,7 @@ import {
   DiAngularSimple,
   DiSpark,
   DiDocker,
-  DiDatabase,
+  DiMsqlServer
   
 } from "react-icons/di";
 import {
@@ -58,7 +58,7 @@ function Techstack() {
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiDatabase />
+        <DiMsqlServer />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
