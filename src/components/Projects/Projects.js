@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
@@ -25,10 +24,11 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="Library Management System"
+              description="
+The project consists of the design and implementation of a computerized library management system for ONEE BO, allowing employees to borrow or reserve books via a user-friendly interface. Librarians and administrators have a centralized dashboard to efficiently manage loans, books, categories, and comments. A key feature is the daily automatic check of loans, which identifies overdue books at noon and places the employees concerned on a blacklist, preventing them from borrowing new books until the overdue books are returned.              "
               ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              demoLink="https://docs.google.com/document/d/1AAoIHmh646K7tH3ICGgCbB8EeN6oXWXJ/edit?usp=sharing&ouid=114691271996189662815&rtpof=true&sd=true"
             />
           </Col>
 
@@ -36,10 +36,12 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="MindBoost"
+              description="
+              Design and create a web platform, named 'MindBoost', dedicated to psychological support for people in difficulty, adapting to the diversity of human needs. This platform offers various services, such as a conversational agent for instant interaction, an anonymous or identified sharing space to exchange experiences, booking therapeutic sessions with a professional, a notepad for personal expression with backup, and a To-Do List to organize daily, weekly or monthly tasks, in order to provide comprehensive and quality support.
+              "
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+             demoLink="https://drive.google.com/file/d/1oEsOL3qNZkiOH5OzeZREVeY_kKlF47ly/view?usp=sharing"
             />
           </Col>
 
@@ -47,10 +49,11 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Parkinson's Predection"
+              description="
+              Dvelop a powerful machine learning model for the early detection of Parkinson's disease from biomedical data, particularly from wearable sensors and traditional medical examinations. The project aims to identify the most relevant features, design and train robust models (neural networks and supervised algorithms), and evaluate their performance with advanced metrics such as F-score and ROC curve. It also seeks to understand the discriminatory biomarkers identified, while providing a user-friendly interface for healthcare professionals, with the aim of facilitating early diagnosis and improving patient care.              "
               ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              demoLink="https://drive.google.com/file/d/1kvkzf8lWYRdXSON1xYf7HBf9BOGW_p6t/view?usp=sharing"              
             />
           </Col>
 
@@ -58,10 +61,10 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="Sales Performance"
+              description="
+A project to visualize sales performance across different regions of the world using a Kaggle dataset, exploring trends, sales figures, and regional performance based on products sold              "
               ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
@@ -69,24 +72,16 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="PNSM"
+              description="
+              The National Mobile Health Platform (PNSM) project aims to optimize and improve the provision of care in rural areas by enabling strategic planning and collaborative reporting between the various health stakeholders (Health Centers, Provincial and Regional Directorates and the Population Directorate). Intended for the staff of the Ministry of Health, this digital platform complies with established standards and allows users to authenticate, enter, modify or delete patient data, and generate PDF reports. The main objective is to facilitate the collection and sharing of information in real time to ensure equitable and effective care in these regions.              "
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              demoLink="
+              https://drive.google.com/file/d/1z-C50Vqha787grfudU60Qx6hO1KvYByW/view?usp=sharing              "
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+     
         </Row>
       </Container>
     </Container>
