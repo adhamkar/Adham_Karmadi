@@ -8,6 +8,10 @@ import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import biblio from "../../Assets/Projects/biblio.png";
+import pi from "../../Assets/Projects/PI.png";
+import parkinson from "../../Assets/Projects/parkinsons.jpg";
+import powerBi from "../../Assets/Projects/powerbi.png";
+import pnsm from "../../Assets/Projects/pnsm.png";
 
 function Projects() {
   return (
@@ -36,7 +40,7 @@ The project consists of the design and implementation of a computerized library 
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={pi}
               isBlog={true}
               GitHub={true}
               title="MindBoost"
@@ -50,7 +54,7 @@ The project consists of the design and implementation of a computerized library 
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={parkinson}
               isBlog={true}
               GitHub={true}
               title="Parkinson's Predection"
@@ -63,18 +67,18 @@ The project consists of the design and implementation of a computerized library 
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={powerBi}
               Bi={true}
               title="Sales Performance"
               description="
               A project to visualize sales performance across different regions of the world using a Kaggle dataset, exploring trends, sales figures, and regional performance based on products sold              "
-             demoLink="https://app.powerbi.com/reportEmbed?reportId=88389da5-9782-4f83-9e99-6c557670eea5"
+             demoLink="https://drive.google.com/file/d/1hOPbeFVO6DkjGomSqaFe_QlE3oJoHVRq/view?usp=sharing"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={pnsm}
               isBlog={true}
               GitHub={true}
               title="PNSM"
