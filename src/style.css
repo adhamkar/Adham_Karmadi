@@ -269,7 +269,34 @@ button:focus {
   color: whitesmoke;
   text-align: left;
 }
-
+.photo-content {
+  padding: 9rem 0 2rem !important;
+  color: whitesmoke;
+  text-align: left;
+  margin-left: 30rem !important
+}
+.photo-section{
+  position: relative;
+  z-index: -1;
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 10px !important;
+  padding-top: 5px !important;
+}
+.photo-section2{
+  position: relatiabve;
+ 
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 10px !important;
+  padding-top: 5rem !important;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  flex-direction: column;
+}
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
